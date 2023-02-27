@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F34A07729AD73FF0091047B /* YayiStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A07629AD73FF0091047B /* YayiStoreApp.swift */; };
+		5F34A07929AD73FF0091047B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A07829AD73FF0091047B /* ContentView.swift */; };
+		5F34A07B29AD74010091047B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F34A07A29AD74010091047B /* Assets.xcassets */; };
+		5F34A07E29AD74010091047B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F34A07D29AD74010091047B /* Preview Assets.xcassets */; };
+		5F34A08829AD74010091047B /* YayiStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A08729AD74010091047B /* YayiStoreTests.swift */; };
+		5F34A09229AD74010091047B /* YayiStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A09129AD74010091047B /* YayiStoreUITests.swift */; };
+		5F34A09429AD74010091047B /* YayiStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A09329AD74010091047B /* YayiStoreUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F34A08429AD74010091047B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F34A06B29AD73FF0091047B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F34A07229AD73FF0091047B;
+			remoteInfo = YayiStore;
+		};
+		5F34A08E29AD74010091047B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F34A06B29AD73FF0091047B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F34A07229AD73FF0091047B;
+			remoteInfo = YayiStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F34A07329AD73FF0091047B /* YayiStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YayiStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F34A07629AD73FF0091047B /* YayiStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayiStoreApp.swift; sourceTree = "<group>"; };
+		5F34A07829AD73FF0091047B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5F34A07A29AD74010091047B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F34A07D29AD74010091047B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5F34A08329AD74010091047B /* YayiStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YayiStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F34A08729AD74010091047B /* YayiStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayiStoreTests.swift; sourceTree = "<group>"; };
+		5F34A08D29AD74010091047B /* YayiStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YayiStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F34A09129AD74010091047B /* YayiStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayiStoreUITests.swift; sourceTree = "<group>"; };
+		5F34A09329AD74010091047B /* YayiStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayiStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F34A07029AD73FF0091047B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F34A08029AD74010091047B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F34A08A29AD74010091047B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F34A06A29AD73FF0091047B = {
+			isa = PBXGroup;
+			children = (
+				5F34A07529AD73FF0091047B /* YayiStore */,
+				5F34A08629AD74010091047B /* YayiStoreTests */,
+				5F34A09029AD74010091047B /* YayiStoreUITests */,
+				5F34A07429AD73FF0091047B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F34A07429AD73FF0091047B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F34A07329AD73FF0091047B /* YayiStore.app */,
+				5F34A08329AD74010091047B /* YayiStoreTests.xctest */,
+				5F34A08D29AD74010091047B /* YayiStoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F34A07529AD73FF0091047B /* YayiStore */ = {
+			isa = PBXGroup;
+			children = (
+				5F34A07629AD73FF0091047B /* YayiStoreApp.swift */,
+				5F34A07829AD73FF0091047B /* ContentView.swift */,
+				5F34A07A29AD74010091047B /* Assets.xcassets */,
+				5F34A07C29AD74010091047B /* Preview Content */,
+			);
+			path = YayiStore;
+			sourceTree = "<group>";
+		};
+		5F34A07C29AD74010091047B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5F34A07D29AD74010091047B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5F34A08629AD74010091047B /* YayiStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F34A08729AD74010091047B /* YayiStoreTests.swift */,
+			);
+			path = YayiStoreTests;
+			sourceTree = "<group>";
+		};
+		5F34A09029AD74010091047B /* YayiStoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F34A09129AD74010091047B /* YayiStoreUITests.swift */,
+				5F34A09329AD74010091047B /* YayiStoreUITestsLaunchTests.swift */,
+			);
+			path = YayiStoreUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F34A07229AD73FF0091047B /* YayiStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F34A09729AD74010091047B /* Build configuration list for PBXNativeTarget "YayiStore" */;
+			buildPhases = (
+				5F34A06F29AD73FF0091047B /* Sources */,
+				5F34A07029AD73FF0091047B /* Frameworks */,
+				5F34A07129AD73FF0091047B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YayiStore;
+			productName = YayiStore;
+			productReference = 5F34A07329AD73FF0091047B /* YayiStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F34A08229AD74010091047B /* YayiStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F34A09A29AD74010091047B /* Build configuration list for PBXNativeTarget "YayiStoreTests" */;
+			buildPhases = (
+				5F34A07F29AD74010091047B /* Sources */,
+				5F34A08029AD74010091047B /* Frameworks */,
+				5F34A08129AD74010091047B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F34A08529AD74010091047B /* PBXTargetDependency */,
+			);
+			name = YayiStoreTests;
+			productName = YayiStoreTests;
+			productReference = 5F34A08329AD74010091047B /* YayiStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F34A08C29AD74010091047B /* YayiStoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F34A09D29AD74010091047B /* Build configuration list for PBXNativeTarget "YayiStoreUITests" */;
+			buildPhases = (
+				5F34A08929AD74010091047B /* Sources */,
+				5F34A08A29AD74010091047B /* Frameworks */,
+				5F34A08B29AD74010091047B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F34A08F29AD74010091047B /* PBXTargetDependency */,
+			);
+			name = YayiStoreUITests;
+			productName = YayiStoreUITests;
+			productReference = 5F34A08D29AD74010091047B /* YayiStoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F34A06B29AD73FF0091047B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					5F34A07229AD73FF0091047B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					5F34A08229AD74010091047B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5F34A07229AD73FF0091047B;
+					};
+					5F34A08C29AD74010091047B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5F34A07229AD73FF0091047B;
+					};
+				};
+			};
+			buildConfigurationList = 5F34A06E29AD73FF0091047B /* Build configuration list for PBXProject "YayiStore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F34A06A29AD73FF0091047B;
+			productRefGroup = 5F34A07429AD73FF0091047B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F34A07229AD73FF0091047B /* YayiStore */,
+				5F34A08229AD74010091047B /* YayiStoreTests */,
+				5F34A08C29AD74010091047B /* YayiStoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F34A07129AD73FF0091047B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F34A07E29AD74010091047B /* Preview Assets.xcassets in Resources */,
+				5F34A07B29AD74010091047B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F34A08129AD74010091047B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F34A08B29AD74010091047B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F34A06F29AD73FF0091047B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F34A07929AD73FF0091047B /* ContentView.swift in Sources */,
+				5F34A07729AD73FF0091047B /* YayiStoreApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F34A07F29AD74010091047B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F34A08829AD74010091047B /* YayiStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F34A08929AD74010091047B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F34A09429AD74010091047B /* YayiStoreUITestsLaunchTests.swift in Sources */,
+				5F34A09229AD74010091047B /* YayiStoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F34A08529AD74010091047B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F34A07229AD73FF0091047B /* YayiStore */;
+			targetProxy = 5F34A08429AD74010091047B /* PBXContainerItemProxy */;
+		};
+		5F34A08F29AD74010091047B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F34A07229AD73FF0091047B /* YayiStore */;
+			targetProxy = 5F34A08E29AD74010091047B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5F34A09529AD74010091047B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F34A09629AD74010091047B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F34A09829AD74010091047B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YayiStore/Preview Content\"";
+				DEVELOPMENT_TEAM = 3HQ6KASP2U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.yair.com.YayiStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F34A09929AD74010091047B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YayiStore/Preview Content\"";
+				DEVELOPMENT_TEAM = 3HQ6KASP2U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.yair.com.YayiStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F34A09B29AD74010091047B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HQ6KASP2U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.yair.com.YayiStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YayiStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YayiStore";
+			};
+			name = Debug;
+		};
+		5F34A09C29AD74010091047B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HQ6KASP2U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.yair.com.YayiStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YayiStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YayiStore";
+			};
+			name = Release;
+		};
+		5F34A09E29AD74010091047B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HQ6KASP2U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.yair.com.YayiStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YayiStore;
+			};
+			name = Debug;
+		};
+		5F34A09F29AD74010091047B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3HQ6KASP2U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.yair.com.YayiStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YayiStore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F34A06E29AD73FF0091047B /* Build configuration list for PBXProject "YayiStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F34A09529AD74010091047B /* Debug */,
+				5F34A09629AD74010091047B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F34A09729AD74010091047B /* Build configuration list for PBXNativeTarget "YayiStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F34A09829AD74010091047B /* Debug */,
+				5F34A09929AD74010091047B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F34A09A29AD74010091047B /* Build configuration list for PBXNativeTarget "YayiStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F34A09B29AD74010091047B /* Debug */,
+				5F34A09C29AD74010091047B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F34A09D29AD74010091047B /* Build configuration list for PBXNativeTarget "YayiStoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F34A09E29AD74010091047B /* Debug */,
+				5F34A09F29AD74010091047B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F34A06B29AD73FF0091047B /* Project object */;
+}
