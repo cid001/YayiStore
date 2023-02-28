@@ -14,6 +14,11 @@
 		5F34A08829AD74010091047B /* YayiStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A08729AD74010091047B /* YayiStoreTests.swift */; };
 		5F34A09229AD74010091047B /* YayiStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A09129AD74010091047B /* YayiStoreUITests.swift */; };
 		5F34A09429AD74010091047B /* YayiStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A09329AD74010091047B /* YayiStoreUITestsLaunchTests.swift */; };
+		5F34A0A329AD74C40091047B /* StoreTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A0A229AD74C40091047B /* StoreTabView.swift */; };
+		5F34A0A629AD7A720091047B /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A0A529AD7A720091047B /* StoreView.swift */; };
+		5F34A0A829AD7A8E0091047B /* WishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A0A729AD7A8E0091047B /* WishListView.swift */; };
+		5F34A0AA29AD7AA30091047B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A0A929AD7AA30091047B /* ProfileView.swift */; };
+		5F34A0AC29AD87440091047B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34A0AB29AD87440091047B /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		5F34A08D29AD74010091047B /* YayiStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YayiStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F34A09129AD74010091047B /* YayiStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayiStoreUITests.swift; sourceTree = "<group>"; };
 		5F34A09329AD74010091047B /* YayiStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayiStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F34A0A229AD74C40091047B /* StoreTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTabView.swift; sourceTree = "<group>"; };
+		5F34A0A529AD7A720091047B /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		5F34A0A729AD7A8E0091047B /* WishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListView.swift; sourceTree = "<group>"; };
+		5F34A0A929AD7AA30091047B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5F34A0AB29AD87440091047B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,8 @@
 		5F34A07529AD73FF0091047B /* YayiStore */ = {
 			isa = PBXGroup;
 			children = (
+				5F34A0A129AD748C0091047B /* UI */,
+				5F34A0A029AD747E0091047B /* Model */,
 				5F34A07629AD73FF0091047B /* YayiStoreApp.swift */,
 				5F34A07829AD73FF0091047B /* ContentView.swift */,
 				5F34A07A29AD74010091047B /* Assets.xcassets */,
@@ -125,6 +137,25 @@
 				5F34A09329AD74010091047B /* YayiStoreUITestsLaunchTests.swift */,
 			);
 			path = YayiStoreUITests;
+			sourceTree = "<group>";
+		};
+		5F34A0A029AD747E0091047B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F34A0A129AD748C0091047B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5F34A0A229AD74C40091047B /* StoreTabView.swift */,
+				5F34A0A529AD7A720091047B /* StoreView.swift */,
+				5F34A0A729AD7A8E0091047B /* WishListView.swift */,
+				5F34A0A929AD7AA30091047B /* ProfileView.swift */,
+				5F34A0AB29AD87440091047B /* MainView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F34A0A829AD7A8E0091047B /* WishListView.swift in Sources */,
+				5F34A0AC29AD87440091047B /* MainView.swift in Sources */,
 				5F34A07929AD73FF0091047B /* ContentView.swift in Sources */,
+				5F34A0A329AD74C40091047B /* StoreTabView.swift in Sources */,
+				5F34A0A629AD7A720091047B /* StoreView.swift in Sources */,
+				5F34A0AA29AD7AA30091047B /* ProfileView.swift in Sources */,
 				5F34A07729AD73FF0091047B /* YayiStoreApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
