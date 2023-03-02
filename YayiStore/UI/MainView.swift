@@ -17,34 +17,21 @@ private enum Constants {
 
 struct MainView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             StoreTabView()
                 .navigationBarTitleDisplayMode(.inline)
+                .toolbarColorScheme(.dark, for: .navigationBar)
+                .toolbarBackground(Color.orange,
+                                   for: .navigationBar)
+                .toolbarBackground(.visible, for: .navigationBar)
+                .navigationTitle(Constants.navTitle)
                 .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        GeometryReader { geo in
-                            ZStack {
-                                VStack {
-                                    Text(Constants.navTitle).font(.headline)
-                                        .foregroundColor(.blue)
-                                }
-                                .position(x: geo.size.width / Constants.titleSizeDivisor,
-                                          y: geo.size.height / Constants.titleSizeDivisor)
-                                
-                                VStack {
-                                    Button(action: {
-                                        
-                                    }, label: {
-                                        Image(systemName: Constants.cartImage)
-                                    })
-                                    .foregroundColor(.blue)
-                                }
-                                .position(x: geo.size.width * Constants.cartWidthDivisor,
-                                          y: geo.size.height / Constants.cartHeightDivisor)
-                                
-                            }
-                        }
-                    }
+                    Button(action: {
+                   
+                    }, label: {
+                        Image(systemName: Constants.cartImage)
+                    })
+                    .foregroundColor(.white)
                 }
         }
     }

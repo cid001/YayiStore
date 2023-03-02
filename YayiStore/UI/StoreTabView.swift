@@ -17,14 +17,15 @@ private enum Constants {
 import SwiftUI
 
 struct StoreTabView: View {
+    @State var wishlistProducts: [Product] = []
+    
     var body: some View {
         TabView {
-            StoreView()
-                .badge(2)
+            StoreView(wishlistProducts: $wishlistProducts)
                 .tabItem {
                     Label(Constants.storeLabel, systemImage: Constants.storeImage)
                 }
-            WishListView()
+            WishListView(wishlistProducts: $wishlistProducts)
                 .tabItem {
                     Label(Constants.wishListLabel, systemImage: Constants.wishListImage)
                 }
@@ -33,16 +34,17 @@ struct StoreTabView: View {
                     Label(Constants.profileLabel, systemImage: Constants.profileImage)
                 }
         }
+        .tint(Color.orange)
     }
 }
 
 #if DEBUG
 struct StoreTabView_Previews: PreviewProvider {
     static var previews: some View {
-        StoreTabView()
+        StoreTabView(wishlistProducts: productList)
             .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
             .previewDisplayName("iPhone 13 Pro Max")
-        StoreTabView()
+        StoreTabView(wishlistProducts: productList)
             .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
             .previewDisplayName("iPhone SE (3rd generation)")
     }
