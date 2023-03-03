@@ -12,20 +12,49 @@ private enum Constants {
     static let storeImage = "bag.fill"
     static let wishListImage = "heart.fill"
     static let profileImage = "person.crop.circle.fill"
+    static let alertDeadline = 2.0
 }
 
 import SwiftUI
 
 struct StoreTabView: View {
     @State var wishlistProducts: [Product] = []
+    @State var alertToggle: Bool = false
+    @State var alertMessage: String = ""
     
     var body: some View {
         TabView {
-            StoreView(wishlistProducts: $wishlistProducts)
+            StoreView(wishlistProducts: $wishlistProducts,
+                      alertToggle: $alertToggle,
+                      alertMessage: $alertMessage)
                 .tabItem {
                     Label(Constants.storeLabel, systemImage: Constants.storeImage)
                 }
-            WishListView(wishlistProducts: $wishlistProducts)
+                .overlay(content: {
+                    if alertToggle {
+                        AlertView(alertMessage: $alertMessage)
+                            .onAppear {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + Constants.alertDeadline, execute: {
+                                    alertToggle = false
+                                })
+                            }
+                            .padding(.bottom)
+                    }
+                })
+            WishListView(wishlistProducts: $wishlistProducts,
+                         alertToggle: $alertToggle,
+                         alertMessage: $alertMessage)
+                .overlay(content: {
+                    if alertToggle {
+                        AlertView(alertMessage: $alertMessage)
+                            .onAppear {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + Constants.alertDeadline, execute: {
+                                    alertToggle = false
+                                })
+                            }
+                            .padding(.bottom)
+                    }
+                })
                 .tabItem {
                     Label(Constants.wishListLabel, systemImage: Constants.wishListImage)
                 }

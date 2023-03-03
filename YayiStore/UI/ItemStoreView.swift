@@ -15,6 +15,8 @@ private enum Constants {
     static let heartFilledImage = "heart.fill"
     static let starImage = "star.fill"
     static let doubleSpecifier = "%.2f"
+    static let addedMessage = "Product Added to the wishlist!"
+    static let removedMessage = "Product removed from the wishlist!"
     static let vstackSpacing = 15.0
     static let imageWidth = 180.0
     static let imageHeight = 120.0
@@ -26,8 +28,9 @@ private enum Constants {
 
 struct ItemStoreView: View {
     var product: Product
-    @State var heartToggle: Bool = false
     @Binding var wishlistProducts: [Product]
+    @Binding var alertToogle: Bool
+    @Binding var alertMessage: String
     
     var body: some View {
         VStack {
@@ -61,16 +64,24 @@ struct ItemStoreView: View {
                     .padding(.top)
                 
                 Button(action: {
-                    if !heartToggle {
-                        wishlistProducts.append(product)
-                    } else {
+                    if wishlistProducts.contains(where: { $0.id == product.id }) {
+                        alertMessage = Constants.removedMessage
                         wishlistProducts.removeAll(where: { $0.id == product.id })
+                    } else {
+                        alertMessage = Constants.addedMessage
+                        wishlistProducts.append(product)
                     }
-                    heartToggle.toggle()
+                    alertToogle = true
+                    
                 }, label: {
-                    Image(systemName: heartToggle ? Constants.heartFilledImage : Constants.heartImage)
-                        .foregroundColor(heartToggle ? .red: .black)
+                    Image(systemName: wishlistProducts.contains(where: { $0.id == product.id })
+                          ? Constants.heartFilledImage
+                          : Constants.heartImage)
+                        .foregroundColor(wishlistProducts.contains(where: { $0.id == product.id })
+                                         ? .red
+                                         : .black)
                 })
+                .disabled(alertToogle)
                 .padding([.top, .trailing])
             }
             
@@ -100,11 +111,17 @@ struct ItemStoreView: View {
 #if DEBUG
 struct ItemStoreView_Peviews: PreviewProvider {
     static var previews: some View {
-        ItemStoreView(product: productList[1], wishlistProducts: .constant(productList))
+        ItemStoreView(product: productList[1],
+                      wishlistProducts: .constant(productList),
+                      alertToogle: .constant(true),
+                      alertMessage: .constant(""))
             .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
             .previewDisplayName("iPhone 13 Pro Max")
         
-        ItemStoreView(product: productList[1], wishlistProducts: .constant(productList))
+        ItemStoreView(product: productList[1],
+                      wishlistProducts: .constant(productList),
+                      alertToogle: .constant(true),
+                      alertMessage: .constant(""))
             .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
             .previewDisplayName("iPhone SE (3rd generation)")
     }

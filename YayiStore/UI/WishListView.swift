@@ -6,21 +6,35 @@
 //
 
 import SwiftUI
+private enum Constants {
+    static let removedMessage = "Product removed from the wishlist!"
+    static let removedLabel = "Remove"
+}
 
 struct WishListView: View {
     let columns = [GridItem(spacing: 0.0)]
     @Binding var wishlistProducts: [Product]
+    @Binding var alertToggle: Bool
+    @Binding var alertMessage: String
     
     var body: some View {
         VStack {
-            ScrollView {
-                LazyVGrid (columns: columns) {
-                    ForEach(wishlistProducts, id: \.id) { item in
-                        WishlistItemView(product: item)
-                            .padding([.top, .trailing, .leading])
-                    }
+//            ScrollView {
+                
+                List(wishlistProducts) { product in
+                    WishlistItemView(product: product)
+                        .swipeActions {
+                            Button {
+                                alertToggle = true
+                                alertMessage = Constants.removedMessage
+                                wishlistProducts.removeAll(where: { $0.id == product.id })
+                            } label: {
+                                Text(Constants.removedLabel)
+                            }
+                            .tint(.red)
+                        }
                 }
-            }
+                
         }
         .navigationTitle("Wishlist")
     }
@@ -28,11 +42,15 @@ struct WishListView: View {
 
 struct WishListView_Previews: PreviewProvider {
     static var previews: some View {
-        WishListView(wishlistProducts: .constant(productList))
+        WishListView(wishlistProducts: .constant(productList),
+                     alertToggle: .constant(true),
+                     alertMessage: .constant(""))
             .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
             .previewDisplayName("iPhone 13 Pro Max")
         
-        WishListView(wishlistProducts: .constant(productList))
+        WishListView(wishlistProducts: .constant(productList),
+                     alertToggle: .constant(true),
+                     alertMessage: .constant(""))
             .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
             .previewDisplayName("iPhone SE (3rd generation)")
     }
