@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        VStack {
-            Text("Hello Profile!")
+        NavigationStack {
+            VStack {
+                Text("Hello Profile!")
+            }
+            .navigationBarStyle(title: "Profile", color: .orange)
         }
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 private enum Constants {
     static let removedMessage = "Product removed from the wishlist!"
     static let removedLabel = "Remove"
+    static let navTitle = "Wishlist"
 }
 
 struct WishListView: View {
@@ -18,9 +19,8 @@ struct WishListView: View {
     @Binding var alertMessage: String
     
     var body: some View {
-        VStack {
-//            ScrollView {
-                
+        NavigationStack {
+            VStack {
                 List(wishlistProducts) { product in
                     WishlistItemView(product: product)
                         .swipeActions {
@@ -34,9 +34,9 @@ struct WishListView: View {
                             .tint(.red)
                         }
                 }
-                
+            }
+            .navigationBarStyle(title: Constants.navTitle, color: .orange)
         }
-        .navigationTitle("Wishlist")
     }
 }
 
@@ -45,13 +45,23 @@ struct WishListView_Previews: PreviewProvider {
         WishListView(wishlistProducts: .constant(productList),
                      alertToggle: .constant(true),
                      alertMessage: .constant(""))
-            .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
-            .previewDisplayName("iPhone 13 Pro Max")
+        .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
+        .previewDisplayName("iPhone 13 Pro Max")
         
         WishListView(wishlistProducts: .constant(productList),
                      alertToggle: .constant(true),
                      alertMessage: .constant(""))
-            .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
-            .previewDisplayName("iPhone SE (3rd generation)")
+        .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
+        .previewDisplayName("iPhone SE (3rd generation)")
+    }
+}
+
+extension View {
+    func navigationBarStyle(title: String, color: Color) -> some View {
+        self.navigationTitle(title)
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(color, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
     }
 }

@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+private enum Constants {
+    static let natTitle = "Yayi's Store"
+    static let cartImage = "cart.fill"
+}
+
 struct StoreView: View {
     @Binding var wishlistProducts: [Product]
     @Binding var alertToggle: Bool
@@ -16,15 +21,26 @@ struct StoreView: View {
         let columns = [GridItem(spacing: 0.0),
                        GridItem(spacing: 0.0)]
         
-        ScrollView {
-            LazyVGrid (columns: columns) {
-                ForEach(productList, id: \.id) { item in
-                    ItemStoreView(product: item,
-                                  wishlistProducts: $wishlistProducts,
-                                  alertToogle: $alertToggle,
-                                  alertMessage: $alertMessage)
-                    .padding([.top, .trailing, .leading])
+        NavigationStack {
+            ScrollView {
+                LazyVGrid (columns: columns) {
+                    ForEach(productList, id: \.id) { item in
+                        ItemStoreView(product: item,
+                                      wishlistProducts: $wishlistProducts,
+                                      alertToogle: $alertToggle,
+                                      alertMessage: $alertMessage)
+                        .padding([.top, .trailing, .leading])
+                    }
                 }
+            }
+            .navigationBarStyle(title: Constants.natTitle, color: .orange)
+            .toolbar {
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: Constants.cartImage)
+                        .foregroundColor(.white)
+                })
             }
         }
     }
